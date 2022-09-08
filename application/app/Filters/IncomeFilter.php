@@ -14,7 +14,7 @@ class IncomeFilter implements FilterInterface
         return Order::query()
             ->whereBetween('date', [
                 $request->dateFrom,
-                Carbon::today()->format('Y-m-d'),
+                $request->dateTo,
             ]);
     }
 }

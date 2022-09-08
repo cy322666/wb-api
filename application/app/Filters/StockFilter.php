@@ -11,9 +11,9 @@ class StockFilter implements FilterInterface
 {
     public static function searchByRequest (FormRequest $request): Builder
     {
-        return Stock::query()->whereBetween('date', [
+        return Stock::query()->whereBetween('created_at', [
             $request->dateFrom,
-            Carbon::today()->format('Y-m-d'),
+            Carbon::tomorrow()->format('Y-m-d H:i:s'),
         ]);
     }
 }

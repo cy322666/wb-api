@@ -4,7 +4,6 @@ namespace App\Filters;
 
 use App\Models\Order;
 use Illuminate\Foundation\Http\FormRequest;
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 
 class OrderFilter implements FilterInterface
@@ -14,8 +13,7 @@ class OrderFilter implements FilterInterface
         return Order::query()
             ->whereBetween('date', [
                 $request->dateFrom,
-                Carbon::today()->format('Y-m-d'),
-            ])
-            ->where('flag', $request->flag);
+                $request->dateTo,
+            ]);
     }
 }
