@@ -28,7 +28,7 @@ class OrderRequest extends FormRequest
     {
         return [
             'dateFrom' => 'required|date_format:Y-m-d',
-//            'flag' => 'required|numeric',
+            'limit'    => 'numeric|min:1|max:500',
         ];
     }
 
