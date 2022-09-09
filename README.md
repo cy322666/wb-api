@@ -57,5 +57,5 @@ _Выгрузка только за текущий день_
 
 `Путь: GET /api/incomes`
 
-[Ссылка на коллекцию Postman](https://www.postman.com/cy322666/workspace/cebe5a06-b0f1-4022-bd74-f967e1d58607/overview)
+[Ссылка на коллекцию Postman](https://www.postman.com/cy322666/workspace/app-api-test/overview)
 
