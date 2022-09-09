@@ -57,5 +57,7 @@ _Выгрузка только за текущий день_
 
 `Путь: GET /api/incomes`
 
+`Стек: docker/docker-compose, php 8.1, Laravel 8, Laravel Octane`
+
 [Ссылка на коллекцию Postman](https://www.postman.com/cy322666/workspace/app-api-test/overview)
 
